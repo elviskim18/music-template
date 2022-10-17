@@ -1,0 +1,119 @@
+
+ 
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // width: 100vw;
+  // height: 100vh;
+  
+}
+.App{
+  
+  
+  .Title{
+    padding: 10px;
+    margin: 0px;
+    background-color: rgb(94, 158, 197);
+    text-align: center;
+  }
+  .Nav{
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      li{
+        list-style: none;
+        margin-right: 20px;
+        padding: 10px;
+        &:hover{
+          background-color: blue;
+          color: white;
+          border-radius: 5px;
+          
+        }
+      }
+    }
+  }
+  .Bio{
+  
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    .profile{
+      display: flex;
+      .prof-img{
+        font-size: 2em;
+        margin-right: 20px;
+      }
+    }
+    .mybio{
+      
+      margin-left: 20px;
+      .edit{
+        color: rgb(126, 179, 244);
+      }
+    }
+    
+  }
+  .projects{
+    height: 64vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    .text{
+      font-weight: lighter;
+      text-align: center;
+     
+    }
+    .card-container{
+      // background-color: lightcoral;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 50px;
+      overflow: hidden;
+      overflow-y: auto;
+      .card{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: yellow;
+        height: 400px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .image{
+          height: 150px;
+          width: 200px;
+          background-color: green;
+          position: relative;
+          top: 20px;
+          margin-bottom: 5px;
+          
+        }
+        button{
+          padding: 15px 50px;
+          background-color: black;
+          color: white;
+          border: none;
+          border-radius: 5px;
+        }
+        .icons{
+          padding: 20px;
+          font-size: 2em;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 200px;
+          items{
+            margin-left: 20px;
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
